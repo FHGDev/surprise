@@ -5,9 +5,9 @@
     <link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/356248091227324426/972d5e37e93815813b53a29e668e2816.png?size=2048">
     <script>window.onload = () => {
         localStorage.setItem("announcement", true)
-        if (localStorage.announcement == true) {
+        if (localStorage.getItem("announcement") == true) {
           alert("Hey! ❤")
-          localStorage.announcement = false
+          localStorage.setItem("announcement", false)
         }
     }</script>
   </head>
